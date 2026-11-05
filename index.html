@@ -74,12 +74,12 @@
 <p>녹음 받아쓰기는 기기에 있는 음성 인식 서비스로 기기 안에서만 처리합니다. 서버로 보내는 음성 인식은 쓰지 않으며, 기기 안 인식을 쓸 수 없는 기기에서는 받아쓰기가 나타나지 않습니다. 인식에 필요한 언어 자료가 없으면 안드로이드가 음성 인식 서비스에서 내려받을 수 있습니다. 녹음과 받아쓴 글은 그 노트(기기와 사용자가 만든 백업)에만 남습니다.</p>
 
 <h2>6. 옆 칸 웹 보기와 유튜브</h2>
-<p>옆 칸 웹 보기는 사용자가 연 사이트에 직접 연결하며, 그 사이트가 다루는 정보(쿠키 등)는 그 사이트의 방침을 따릅니다. 유튜브 영상은 YouTube 공식 플레이어로 재생되며 <a href="https://www.youtube.com/t/terms">YouTube 서비스 약관</a>과 <a href="https://policies.google.com/privacy">구글 개인정보처리방침</a>이 적용됩니다. 개발자는 방문한 사이트나 본 영상의 기록을 받지 않습니다.</p>
+<p>옆 칸 웹 보기는 사용자가 연 사이트에 직접 연결하며, 그 사이트가 다루는 정보(쿠키 등)는 그 사이트의 방침을 따릅니다. 유튜브 영상은 YouTube API 서비스(공식 플레이어)로 재생되며, 이 기능을 쓰면 <a href="https://www.youtube.com/t/terms">YouTube 서비스 약관</a>과 <a href="https://policies.google.com/privacy">구글 개인정보처리방침</a>이 적용됩니다. 개발자는 방문한 사이트나 본 영상의 기록을 받지 않으며, 옆 칸에 연 주소는 그 노트 설정에만 남습니다.</p>
 
 <h2>7. 앱 권한</h2>
 <table>
   <tr><th>권한</th><th>쓰는 때</th><th>필수 여부</th></tr>
-  <tr><td>마이크</td><td>녹음을 시작할 때</td><td>선택</td></tr>
+  <tr><td>마이크</td><td>녹음을 시작할 때, 녹음 받아쓰기(기기 안)</td><td>선택</td></tr>
   <tr><td>다른 앱 위에 표시</td><td>돋보기를 다른 앱 위에 띄울 때</td><td>선택</td></tr>
   <tr><td>생체 인증</td><td>잠금을 켰을 때. 앱은 지문이나 얼굴 정보를 받지 않습니다</td><td>선택</td></tr>
   <tr><td>인터넷, 네트워크 상태, 와이파이 기기 찾기</td><td>드라이브 백업, ML Kit 모델·번역 언어 자료 내려받기, 무선 발표, 옆 칸 웹 보기와 유튜브</td><td>기능을 쓸 때</td></tr>
@@ -140,12 +140,12 @@
 <p>Recording transcription runs only on your device, using the speech recognition service installed on it. Server-based speech recognition is never used; on devices without on-device recognition, transcription is not shown. If language data needed for recognition is missing, Android may download it from the speech recognition service. Recordings and transcribed text stay only in that note (on your device and in backups you make).</p>
 
 <h2>6. Web and YouTube side panes</h2>
-<p>The web side pane connects directly to sites you open, and information those sites handle (such as cookies) is governed by their own policies. YouTube videos play in the official YouTube player under the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The developer does not receive any record of the sites you visit or the videos you watch.</p>
+<p>The web side pane connects directly to sites you open, and information those sites handle (such as cookies) is governed by their own policies. YouTube videos play through the YouTube API Services (the official player); by using this feature you are bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The developer does not receive any record of the sites you visit or the videos you watch, and the address you open in the side pane stays only in that note's settings.</p>
 
 <h2>7. App permissions</h2>
 <table>
   <tr><th>Permission</th><th>When it is used</th><th>Required?</th></tr>
-  <tr><td>Microphone</td><td>When you start a recording</td><td>Optional</td></tr>
+  <tr><td>Microphone</td><td>When you start a recording, and for recording transcription (on device)</td><td>Optional</td></tr>
   <tr><td>Display over other apps</td><td>When you show the magnifier over other apps</td><td>Optional</td></tr>
   <tr><td>Biometric authentication</td><td>When you turn on a lock. The app never receives fingerprint or face data</td><td>Optional</td></tr>
   <tr><td>Internet, network state, Wi-Fi device discovery</td><td>Drive backup, ML Kit model and translation language pack downloads, wireless presentation, web and YouTube side panes</td><td>When you use these features</td></tr>
